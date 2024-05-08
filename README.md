@@ -8,9 +8,13 @@ to see the shortened URL’s statistics or delete the forwarding.
 ## Quick start
 
 ```
-git clone git@github.com:sava9ecode/fastapi_url_shortener.git
+git clone git@github.com:ezemlyanskiy/fastapi_url_shortener.git
 cat .env_sample > .env (and fill it out)
+python3 -m venv venv
+source venv/bin/activate
+python -m pip install -U pip
+python -m pip install -r requirements.txt
 uvicorn shortener_app.main:app
 ```
 
-Next, go to 127.0.0.1:8000/docs and try it out.
+Next, go to http://127.0.0.1:8000/docs and try it out!
